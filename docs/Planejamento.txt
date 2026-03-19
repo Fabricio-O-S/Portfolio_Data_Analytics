@@ -1,0 +1,57 @@
+organizar as seções nesta ordem:
+
+Header (Cabeçalho): Nome, Título (ex: Analista de Dados & Automação | Especialista em Suprimentos) e links para seu LinkedIn e GitHub.
+
+Sobre Mim: Um parágrafo que conecte suas duas áreas.
+
+Sugestão: "Profissional de TI com foco em infraestrutura e sistemas, especializado em saneamento de dados e otimização de processos de Suprimentos através de Python e Power BI."
+
+Seção de Projetos (O Coração do Portfólio): Onde você colocará os cards dos seus trabalhos.
+
+Habilidades (Tech Stack): Ícones de Python, SQL, Power BI, ERP (SAP/TOTVS), Pandas e APIs.
+
+2. Seleção de Projetos (O que mostrar)
+Para um perfil como o seu, não mostre apenas "código", mostre soluções de problemas. Aqui estão 3 sugestões de projetos baseados na sua realidade:
+
+Projeto 1: Saneamento e Padronização de Cadastros (O "Carro-Chefe")
+O Problema: Descrições de produtos duplicadas ou incompletas no ERP dificultando as compras.
+
+A Solução (Python): Um script que usa a biblioteca Pandas para limpar a base e, talvez, uma API de IA para sugerir descrições padronizadas.
+
+O que mostrar: Um print do "antes e depois" dos dados e o link do código no GitHub.
+
+Projeto 2: Automação de Recebimento Fiscal (Portal de Notas)
+O Problema: Conferência manual demorada entre Notas Fiscais e Pedidos de Compra.
+
+A Solução (Automação): Uso de Python para ler XMLs de notas e cruzar com dados do pedido via API.
+
+O que mostrar: Um fluxograma do processo que você criou e a explicação da lógica de validação.
+
+Projeto 3: Dashboard de Performance de Suprimentos (Power BI)
+O Problema: Falta de visibilidade sobre o lead time de entrega ou gastos por categoria.
+
+A Solução (Data Viz): Um dashboard que consome os dados tratados pelo seu script Python.
+
+O que mostrar: Um print do dashboard (ou link para o relatório público) destacando os KPIs que você monitora.
+
+3. Passo a Passo da Execução
+Fase de Design (Dia 1): Suba o template no Antigravity. Use o chat para dizer: "Altere as cores deste site para tons de azul escuro e cinza profissional. Traduza todos os textos do template para Português."
+
+Documentação (Dia 2): Escreva os textos dos projetos. Use a técnica STAR (Situação, Tarefa, Ação e Resultado). Foque no resultado: "Reduzi o erro de cadastro em 30%" ou "Economizei 10h semanais de conferência manual".
+
+Linkagem (Dia 3): Certifique-se de que os botões "Ver Código" levam para os repositórios certos no seu GitHub.
+
+Publicação (Dia 4): Suba os arquivos editados de volta para o repositório do GitHub e ative o GitHub Pages.
+
+4. Dica Técnica para o Antigravity
+Como você está aprendendo Python, você pode pedir para o Antigravity criar pequenos trechos de código para o seu site, como por exemplo:
+
+"Crie um componente de card em HTML/CSS para eu exibir um projeto de Python, com espaço para uma imagem, uma descrição curta e um botão linkando para o GitHub."
+
+Dica para Suprimentos: No seu portfólio, mencione que você entende de NCM e Reforma Tributária. Para quem contrata na área de dados para logística/suprimentos, esse conhecimento de "negócio" vale tanto quanto o conhecimento de Python.
+
+5. Ideias Salvas para o Futuro: Seção "Destaques Rápidos" (Sidebar)
+Caso queira reativar os mini-posts no menu lateral, aqui estão algumas alternativas:
+- Transformar em cards com links diretos para Certificados (Coursera, Alura, Microsoft).
+- Usar para destacar posts de alto engajamento no LinkedIn.
+- Criar mini-casos logísticos de negócio (economia de frete, tempo) para revalidar a experiência em suprimentos de forma menos técnica e mais comercial.
