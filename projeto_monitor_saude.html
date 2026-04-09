@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Monitor de Dispositivos | Portfólio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="main">
+				<div class="inner">
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Fabrício Silva</strong> | Analista de Dados &amp; Suprimentos</a>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/compradorfabriciosilva/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Fabricio-O-S" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</header>
+
+					<section>
+						<header class="main">
+							<h1>Monitor de Saúde de Dispositivos (Socket &amp; PJL)</h1>
+						</header>
+
+						<span class="image main" style="width: 100%; height: 500px; margin: 0 auto 2em auto; display: block;"><img src="images/banner.png" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; border-radius: 8px;" /></span>
+
+						<h2>Objetivo do Sistema</h2>
+						<p>Este projeto foi desenvolvido para suprir uma necessidade de monitoramento de infraestrutura de TI de forma leve e automatizada. O script testa a conectividade (ping) de uma lista de dispositivos de rede, registrando logs de falha e sucesso em tempo real com uma interface visual dinâmica.</p>
+
+						<h2>Inovação com Protocolos de Rede</h2>
+						<ul>
+							<li><strong>Controle de Hardware (PJL):</strong> Implementação de comandos de baixo nível via protocolo <em>Printer Job Language</em> para interagir diretamente com impressoras na rede (ex: solicitar página de configuração).</li>
+							<li><strong>Conexão via Sockets:</strong> Uso da biblioteca Socket do Python para comunicação direta em portas específicas (ex: porta 9100), garantindo controle total sobre o tráfego de rede.</li>
+							<li><strong>Interface Streamlit:</strong> Uso de <code>st.session_state</code> para manter os dados de monitoramento persistentes enquanto o usuário interage com o painel, sem perder o histórico do "ping".</li>
+							<li><strong>Tratamento de Exceções:</strong> Lógica robusta com timeouts configuráveis para evitar que dispositivos offline travem a execução do loop de monitoramento.</li>
+						</ul>
+
+						<h2>Visão Técnica</h2>
+						<p>O foco aqui não foi apenas o "Data Analytics", mas sim a <strong>Engenharia de Automação</strong> para infraestrutura, provando que o Python pode ser uma ferramenta poderosa para manter a disponibilidade de ativos em nível operacional.</p>
+
+						<hr class="major" />
+
+						<h2>Acesso ao Repositório</h2>
+						<p>Veja como configurar sua lista de IPs e rodar o monitor localmente:</p>
+
+						<ul class="actions">
+							<li><a href="https://github.com/Fabricio-O-S/monitor-saude-dispositivos" target="_blank" class="button primary large">Ver Código no GitHub</a></li>
+							<li><a href="index.html#projetos" class="button large">Voltar aos Projetos</a></li>
+						</ul>
+
+					</section>
+				</div>
+			</div>
+
+			<div id="sidebar">
+				<div class="inner">
+					<section id="search" class="alt">
+						<form method="post" action="#">
+							<input type="text" name="query" id="query" placeholder="Pesquisar" />
+						</form>
+					</section>
+
+					<section style="text-align: center; border-bottom: solid 1px rgba(210, 215, 217, 0.75); padding-bottom: 2em; margin-bottom: 2em;">
+						<div style="width: 150px; height: 150px; margin: 0 auto 1.5em auto; border-radius: 50%; overflow: hidden; border: 4px solid #1E3A8A; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
+							<img src="images/1739905716703.jpg" alt="Fabrício Silva" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+						</div>
+						<h3 style="margin-bottom: 0.2em;">Fabrício Silva</h3>
+						<p style="font-size: 0.9em; margin-bottom: 2em; color: #7f888f;">Data &amp; Supply Chain Analytics</p>
+
+						<ul class="contact" style="text-align: left; margin: 0; padding-top: 1.5em; border-top: solid 1px rgba(210, 215, 217, 0.75);">
+							<li class="icon solid fa-envelope"><a href="mailto:fabricio_la_gnt@hotmail.com">fabricio_la_gnt@hotmail.com</a></li>
+							<li class="icon solid fa-phone">(16) 99106-9995</li>
+							<li class="icon solid fa-home">Sertãozinho - SP</li>
+						</ul>
+					</section>
+
+					<nav id="menu">
+						<header class="major">
+							<h2>Menu</h2>
+						</header>
+						<ul>
+							<li><a href="index.html">Página Inicial</a></li>
+							<li><a href="index.html#projetos">Meus Projetos</a></li>
+							<li><a href="#">Sobre Mim / Currículo</a></li>
+						</ul>
+					</nav>
+
+					<footer id="footer">
+						<p class="copyright">&copy; Fabrício Silva. Todos os direitos reservados.</p>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

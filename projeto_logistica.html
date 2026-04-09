@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<!--
+    ============================================================
+    PORTFÓLIO DE DATA ANALYTICS — Fabrício Silva
+    ============================================================
+    Arquivo: projeto_logistica.html
+    Função : Página de detalhes do Projeto "Dashboard Logística"
+    Autor  : Fabrício Silva
+    Template: Editorial by HTML5 UP (html5up.net | @ajlkn)
+    ============================================================
+
+    CONCEITO: SLA (Service Level Agreement)
+    SLA é o Acordo de Nível de Serviço — um contrato que define
+    o tempo máximo permitido para uma entrega, atendimento, etc.
+    No contexto deste dashboard:
+    - "On-Time" = entregas realizadas DENTRO do prazo SLA
+    - Medir o SLA é fundamental para logística: permite identificar
+      rotas problemáticas, transportadoras lentas, etc.
+
+    CONCEITO: KPI vs MÉTRICA
+    - Métrica = qualquer número mensurável (ex: número de entregas)
+    - KPI = Key Performance Indicator = métrica ESTRATÉGICA que
+      reflete diretamente o desempenho do negócio (ex: taxa on-time)
+    Um bom dashboard separa claramente os KPIs dos dados brutos.
+    ============================================================
+-->
+<html>
+	<head>
+		<!-- Título otimizado: descreve o projeto + nome do site -->
+		<title>Dashboard Logística — Desempenho Operacional | Portfólio</title>
+
+		<!-- UTF-8: suporte completo a caracteres pt-BR -->
+		<meta charset="utf-8" />
+
+		<!-- Responsividade: funciona em mobile, tablet e desktop -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<!-- CSS do template Editorial (layout, tipografia, componentes) -->
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+
+	<!--
+	    is-preload: o JavaScript (main.js) remove essa classe após o
+	    carregamento completo. Enquanto ela existe, animações de entrada
+	    são suprimidas para evitar flashes de conteúdo mal-formatado.
+	-->
+	<body class="is-preload">
+
+		<!-- WRAPPER: container pai que abriga main + sidebar lado a lado -->
+		<div id="wrapper">
+
+			<!-- ÁREA PRINCIPAL: conteúdo do projeto (coluna maior) -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- CABEÇALHO PADRÃO DO SITE -->
+					<!--
+					    Este bloco é IDÊNTICO em todas as páginas do portfólio.
+					    É a "identidade visual" consistente: o visitante sempre
+					    sabe onde está (portfólio do Fabrício Silva).
+					    O logo é um link que volta para a página inicial.
+					-->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Fabrício Silva</strong> | Analista de Dados &amp; Suprimentos</a>
+						<ul class="icons">
+							<!-- LinkedIn: abre em nova aba (target="_blank") -->
+							<li><a href="https://www.linkedin.com/in/compradorfabriciosilva/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<!-- GitHub: repositório com os projetos de código -->
+							<li><a href="https://github.com/Fabricio-O-S" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</header>
+
+					<!-- SEÇÃO DE CONTEÚDO DO PROJETO DE LOGÍSTICA -->
+					<section>
+
+						<!-- TÍTULO PRINCIPAL H1 -->
+						<!--
+						    class="main" no header = estilo de maior destaque do template
+						    Boas práticas: use apenas 1 <h1> por página (regra de SEO)
+						-->
+						<header class="main">
+							<h1>Dashboard Logística — Desempenho Operacional</h1>
+						</header>
+
+						<!-- IMAGEM DE DESTAQUE DO PROJETO -->
+						<!--
+						    REVISÃO DOS CONCEITOS DE CSS INLINE APLICADOS:
+
+						    No elemento <span> (container da imagem):
+						    - width: 100%            → largura total da coluna
+						    - height: 500px          → altura sempre 500px
+						    - display: block         → ocupa a própria linha (sem inline)
+						    - margin: 0 auto 2em auto → centrado, 2em de espaço embaixo
+
+						    No elemento <img> (imagem em si):
+						    - width/height: 100%     → preenche o container
+						    - object-fit: cover      → mantém proporção sem distorcer
+						    - object-position: top   → prioriza mostrar o topo (header do dash)
+						    - border-radius: 8px     → cantos levemente arredondados
+						-->
+						<span class="image main" style="width: 100%; height: 500px; margin: 0 auto 2em auto; display: block;"><img src="images/dash_logistica.png" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; border-radius: 8px;" /></span>
+
+						<!-- DESCRIÇÃO DO PROJETO -->
+						<h2>Visão Geral do Projeto</h2>
+						<p>Painel de Controle focado estritamente no desempenho operacional de frotas e logística. O projeto analisa minunciosamente os tempos de entrega (SLA), a roteirização, os motivos exatos que levam a devoluções de mercadorias no momento da entrega, e como estas oscilações impactam as métricas financeiras associadas aos fretes.</p>
+
+						<!-- RESULTADOS QUANTITATIVOS DO PROJETO -->
+						<!--
+						    Apresentar números concretos é ESSENCIAL em um portfólio.
+						    Recrutadores e gestores querem ver impacto mensurável.
+						    "Melhora a logística" é vago. "53% on-time → meta de 85%" é preciso.
+						-->
+						<h2>Resultados Principais</h2>
+						<ul>
+							<!-- KPI 1: Volume total de operações analisadas -->
+							<li><strong>Volume Movimentado:</strong> 8.026 ordens de frete totais no período de análise, indicando um crescimento na operação de +3.1%.</li>
+
+							<!-- KPI 2: Taxa de entregas no prazo (On-Time Delivery) -->
+							<li><strong>Nível de Serviço (On-Time):</strong> 53.03% das entregas realizadas dentro da janela de compromisso com o cliente.</li>
+
+							<!-- KPI 3: Taxa de atraso — oportunidade de melhoria -->
+							<li><strong>Atrasos:</strong> 46.97% das entregas sofrem variação de aderência, algo passível de atuação através dos faróis de alerta implantados no dashboard.</li>
+
+							<!-- KPI 4: Principal causa raiz dos problemas -->
+							<li><strong>Ofensores:</strong> A análise demonstrou que grande parte do passivo na logística reversa e devolução tem sido o motivo de "Desistência do cliente".</li>
+						</ul>
+
+						<!-- METODOLOGIA E TÉCNICA USADA -->
+						<!--
+						    TERMOS DO SETOR LOGÍSTICO MENCIONADOS:
+						    - Modal: meio de transporte (rodoviário, ferroviário, aéreo...)
+						    - Transportadora: empresa terceirizada que faz o frete
+						    - SLA (Service Level Agreement): prazo contratado para entrega
+						    - Logística reversa: processo de devolução do cliente → empresa
+						    - Roteirização: otimização das rotas de entrega
+						-->
+						<h2>Construção e Análise em Dados</h2>
+						<p>O foco total durante a construção deste MVP no <strong>Power BI</strong> foi dar ao controlador de tráfego, ou gestor logístico, os "insights sobre a eficiência da frota". Ao navegar nos filtros é possível cruzar, por exemplo, o tipo de caminhão associado às maiores taxas de atraso, o que em base de dados de transportadoras revela o desgaste dos modais ou a capacidade de absorção volumétrica subutilizada.</p>
+
+						<!--
+						    MVP = Minimum Viable Product (Produto Mínimo Viável)
+						    Em BI, um MVP de dashboard significa: entregar as visões
+						    mais importantes primeiro, antes de adicionar complexidade.
+						    É uma abordagem ágil: validar o valor antes de expandir.
+						-->
+
+						<!-- LINHA DIVISÓRIA DECORATIVA DO TEMPLATE -->
+						<hr class="major" />
+
+						<!-- =====================================================
+						    LINK PARA O DASHBOARD INTERATIVO
+						    =====================================================
+						    Este projeto usa o padrão de BOTÃO DIRETO (sem iframe),
+						    levando o usuário para o Power BI Service em nova aba.
+
+						    Vantagens desta abordagem:
+						    ✅ Página mais leve (não carrega o iframe)
+						    ✅ Dashboard em tela cheia no Power BI = melhor experiência
+						    ✅ Evita problemas com bloqueio de iframes (X-Frame-Options)
+
+						    Desvantagens:
+						    ❌ Usuário sai da sua página
+						    ❌ Menos "wow factor" comparado ao iframe embutido
+						    ===================================================== -->
+						<h2>Dashboard Interativo</h2>
+						<p>Explore as visões das transportadoras, devoluções e fretes através da publicação web clicando no botão:</p>
+						<ul class="actions">
+							<!--
+							    "button primary large":
+							    primary = cor principal do tema (mais chamativo)
+							    large   = botão maior que o padrão
+							    target="_blank" = abre em nova aba (não abandona a página)
+							-->
+							<li><a href="https://app.powerbi.com/view?r=eyJrIjoiMzE0MWE2M2UtZjYzMi00ZjY2LTgxNWUtNGE5M2Y0ZjM0ZTEwIiwidCI6IjU0YjdjOTcwLTNkZmUtNDYyYS04ZjdmLTc0ODk2MzIzOGY2NyJ9" target="_blank" class="button primary large">Visualizar o Dashboard</a></li>
+						</ul>
+
+					</section>
+				</div>
+			</div>
+
+			<!-- SIDEBAR: barra lateral fixa (coluna da direita) -->
+			<div id="sidebar">
+				<div class="inner">
+
+					<!-- CAMPO DE PESQUISA -->
+					<!--
+					    Por que este campo existe se não tem busca real?
+					    É do template original e serve como "placeholder" visual.
+					    Para implementar busca real precisaria de:
+					    - JavaScript que filtra conteúdo da página (Client-Side Search)
+					    - Ou um backend com banco de dados (Server-Side Search)
+					-->
+					<section id="search" class="alt">
+						<form method="post" action="#">
+							<input type="text" name="query" id="query" placeholder="Pesquisar" />
+						</form>
+					</section>
+
+					<!-- BLOCO DE PERFIL E CONTATOS -->
+					<section style="text-align: center; border-bottom: solid 1px rgba(210, 215, 217, 0.75); padding-bottom: 2em; margin-bottom: 2em;">
+
+						<!-- FOTO DE PERFIL CIRCULAR -->
+						<!--
+						    RESUMO DA TÉCNICA DA FOTO REDONDA:
+						    div com border-radius: 50% + overflow: hidden
+						    = qualquer imagem dentro vira circular
+						    É uma das técnicas CSS mais usadas no mercado.
+						-->
+						<div style="width: 150px; height: 150px; margin: 0 auto 1.5em auto; border-radius: 50%; overflow: hidden; border: 4px solid #1E3A8A; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
+							<img src="images/1739905716703.jpg" alt="Fabrício Silva" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+						</div>
+
+						<!-- Nome e especialidade -->
+						<h3 style="margin-bottom: 0.2em;">Fabrício Silva</h3>
+						<p style="font-size: 0.9em; margin-bottom: 2em; color: #7f888f;">Data &amp; Supply Chain Analytics</p>
+
+						<!-- INFORMAÇÕES DE CONTATO -->
+						<!--
+						    Ícones do Font Awesome (fa-*):
+						    - fa-envelope = símbolo de e-mail (envelope)
+						    - fa-phone    = símbolo de telefone
+						    - fa-home     = símbolo de casa/localização
+						    "icon solid" = versão preenchida do ícone
+						    href="mailto:..." = link que abre aplicativo de e-mail
+						-->
+						<ul class="contact" style="text-align: left; margin: 0; padding-top: 1.5em; border-top: solid 1px rgba(210, 215, 217, 0.75);">
+							<li class="icon solid fa-envelope"><a href="mailto:fabricio_la_gnt@hotmail.com">fabricio_la_gnt@hotmail.com</a></li>
+							<li class="icon solid fa-phone">(16) 99106-9995</li>
+							<li class="icon solid fa-home">Sertãozinho - SP</li>
+						</ul>
+					</section>
+
+					<!-- MENU DE NAVEGAÇÃO DO SITE -->
+					<nav id="menu">
+						<header class="major">
+							<h2>Menu</h2>
+						</header>
+						<ul>
+							<!-- Link absoluto: volta para a página inicial -->
+							<li><a href="index.html">Página Inicial</a></li>
+							<!-- Link composto: vai ao index.html E rola até #projetos -->
+							<li><a href="index.html#projetos">Meus Projetos</a></li>
+							<!-- Link pendente: aguarda criar página do currículo -->
+							<li><a href="#">Sobre Mim / Currículo</a></li>
+						</ul>
+					</nav>
+
+					<!-- RODAPÉ DA SIDEBAR -->
+					<!-- &copy; = símbolo © de copyright em HTML -->
+					<footer id="footer">
+						<p class="copyright">&copy; Fabrício Silva. Todos os direitos reservados. Portfólio de Data Analytics.</p>
+					</footer>
+
+				</div>
+			</div>
+		</div><!-- Fecha #wrapper: container raiz do template -->
+
+		<!-- =========================================================
+		    IMPORTAÇÃO DOS SCRIPTS JAVASCRIPT
+		    =========================================================
+		    Por que no final do body e não no <head>?
+		    → O HTML é lido de cima para baixo. Scripts no <head>
+		      bloqueiam a renderização até terminarem de carregar.
+		    → No final do body, o usuário já VÊ a página enquanto
+		      os scripts terminam de carregar em background.
+		    Esta é uma prática chamada "script deferral" (adiamento).
+		    =========================================================  -->
+		<script src="assets/js/jquery.min.js"></script>     <!-- Biblioteca jQuery -->
+		<script src="assets/js/browser.min.js"></script>    <!-- Detecção de browser -->
+		<script src="assets/js/breakpoints.min.js"></script><!-- Breakpoints de tela -->
+		<script src="assets/js/util.js"></script>           <!-- Funções utilitárias -->
+		<script src="assets/js/main.js"></script>           <!-- Script principal do template -->
+	</body>
+</html>
